@@ -1,0 +1,21 @@
+#MySQL Login Details
+username = db_usermame
+password = db_password
+host = localhost
+db_name = db_name
+
+#Query used to read from database
+read_query = Select * FROM album
+#Number of concurrent reads to attempt
+readers = 5
+#Number of times to run reach reader worker
+read_loop_count = 1000
+
+#Query to write to database
+write_query = INSERT INTO album (title, artist, price) VALUES ('The Bends', 'Radiohead', 27.98)
+
+#Logging options - Options are file, console, or both
+logging = both
+
+#Name of log file to write to (must have some value even if not logging to a file)
+logfile = log.txt
